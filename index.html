@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>岡谷市の隠れ桜の名所</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <div id="loading">
+        ロード中です
+    </div>
+    <header>
+        <h1>岡谷市の桜の名所紹介サイト</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="index.html#spot-list">名所一覧</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+                <li><button id="dark" class="button">ダークモード切替</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <h2>岡谷の桜を見に行こう！</h2>
+            <p>隠れた名所をご紹介します</p>
+        </section>
+
+        <div class="heading-group">
+            <h2>
+                名所一覧
+            </h2>
+        </div>
+        <section class="filter">
+            <select name="box">
+                <option value="all">すべて</option>
+                <option value="river">川沿い</option>
+                <option value="park">公園</option>
+            </select>
+            <button>非表示</button>
+        </section>
+        <section class="spot-list" id="spot-list">
+        </section>
+
+        <section class="main-section contact" id="contact">
+            <div class="container">
+                <div class="heading-group">
+                    <h2>お問い合わせ</h2>
+                </div>
+                <p>ご不明点等あれば、お気軽にお問い合わせください</br>また、掲載場所のコメントや写真などもよろしければどうぞ！</p>
+                <div class="layout">
+
+                    <div class="map">
+                        <p class="label">地図はこちら</p>
+                        <a href="map.html" class="button">地図へ</a>
+                    </div>
+
+                    <div class="form">
+                        <p class="label">コメント・お問い合わせはこちら</p>
+                        <a href="contact.html" class="button">コメント・お問い合わせフォームへ</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 岡谷市 桜観光ガイド</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="index.html#spot-list">名所一覧</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+
+            </ul>
+        </nav>
+    </footer>
+
+
+</body>
+
+</html>

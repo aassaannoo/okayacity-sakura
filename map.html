@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>地図で見る岡谷の桜</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="map.js" defer></script>
+    <script
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDN7MkFsBstOiWRkJJwAiyEvabLodpngVo&callback=initMap"
+  async
+  defer
+  loading="async">
+</script>
+
+</head>
+
+<body>
+    <header>
+        <h1>岡谷市の桜の名所紹介サイト</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="index.html#spot-list">名所一覧</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+                <li><button id="dark" class="button">ダークモード切替</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="map-container">
+            <h2>地図で見る桜の名所</h2>
+            <div id="map"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 岡谷市 桜観光ガイド</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">トップ</a></li>
+                <li><a href="index.html#spot-list">名所一覧</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </footer>
+    </body>
+
+</html>

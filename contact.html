@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recet.css">
+    <link rel="stylesheet" href="contact_style.css">
+</head>
+<body>
+    <main class="lower-main">
+        <div class="lower-heading-group">
+            <h2>お問い合わせ・コメント</h2>
+            <p>ご不明点などがあれば、お気軽にお問い合わせください。</p>
+            <p>また、掲載場所のコメントや写真などもよろしければどうぞ</p>
+        </div>
+        <form class="form-box" action="https://api.staticforms.xyz/submit" method="post">
+            <input type="hidden" name="accessKey" value="sf_jbml731hb1mc513j4e3l5hc9">
+            <input type="hidden" name="redirectTo" value="https://www.sus.ac.jp/">
+            <div class="form-item">
+                <label>お名前</label>
+                <input type="text" name="name" placeholder="例）山田太郎">
+            </div>
+            <div class="form-item">
+                <label>メールアドレス</label>
+                <input type="text" name="name" placeholder="例）example@example.com">
+            </div>
+            <div class="form-item">
+                <label>お問い合わせ内容</label>
+                <input type="text" name="name" placeholder="例）お問い合わせ内容をご入力ください">
+            </div>
+            <div class="form-item">
+            <label for="photo">写真をアップロード</label>
+            <input type="file" id="photo" name="photo" accept="image/*">
+          </div>
+            <div class="form-item">
+              <button type="submit">送信する</button>
+            </div>
+
+        </form>
+    </main>
+    
+</body>
+</html>

@@ -1,0 +1,242 @@
+body {
+    font-family: sans-serif;
+    color: #2E2E2E;
+    margin: 0;
+    background-color: #fdf9f4;
+}
+
+header,
+footer {
+    background-color: #F8C7CC;
+    padding: 1em;
+    text-align: center;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    list-style: none;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2E3A59;
+}
+
+.hero {
+    padding: 60px 20px;
+    background-image: url(img/IMG_20240414_211416.jpg);
+    background-size: cover;
+    color: white;
+    text-shadow: 1px 1px 4px #000;
+    text-align: center;
+    min-height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    h2 {
+        font-size: 50px;
+    }
+}
+
+
+
+
+
+.spot-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 40px;
+    max-width: 1500px; 
+    margin: 0 auto; 
+}
+
+.spot-card {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.spot-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.spot-card .content {
+    padding: 1em;
+}
+
+.spot-card h3 {
+    margin-top: 0;
+    font-size: 1.2em;
+}
+
+
+.heading-group {
+    text-align: center;
+    margin: 20px 0 60px;
+
+    h2 {
+        color: #B19693;
+        font-size: 40px;
+        font-weight: 700;
+    }
+
+    &::after {
+        content: "";
+        display: block;
+        width: 40px;
+        height: 4px;
+        background-color: #6A9631;
+        border-radius: 4px;
+        margin: 30px auto 0;
+    }
+}
+
+
+
+
+
+
+
+
+.contact {
+    text-align: center;
+    background-color: #F3F1EE;
+    padding-top: 20px;
+
+    .layout {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 40px;
+        margin-top: 60px;
+        margin-inline: auto;
+        max-width: 700px;
+    }
+
+    .label {
+        margin-bottom: 20px;
+    }
+
+    .hour {
+        font-size: 13px;
+        display: block;
+        margin-top: 1em;
+    }
+
+    .button {
+        display: inline-block;
+        color: #fff;
+        background-color: #6A9631;
+        padding: 1em 2em;
+        border-radius: 8px;
+        font-size: 16px;
+        text-align: center;
+        text-decoration: none;
+        min-width: 200px;
+        margin-bottom: 40px;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+    }
+
+    .button:hover {
+        background-color: #85b94a;
+        transform: scale(1.05);
+    }
+}
+
+
+section.filter select {
+  margin-left: 40px;
+  padding: 20px;
+  font-size: 16px;
+  color: #333;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+
+
+
+
+/*ダークモード用*/
+body.dark-mode {
+  background-color: #1e1e1e;
+  color: #f0f0f0;
+}
+body.dark-mode header,
+body.dark-mode footer {
+  background-color: #333;
+}
+body.dark-mode .spot-card {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+body.dark-mode nav a {
+  color: #f0f0f0;
+}
+
+body.dark-mode .contact {
+  background-color: #2a2a2a;
+  color: #f0f0f0;
+}
+
+
+
+/*ロード画面*/
+#loading {
+    transition: all 1s;
+    background-color: #ddd;
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    display: grid;
+    place-items: center;
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+.hidden {
+  display: none !important;
+}
+
+
+
+/*map.html用*/
+.map-container {
+    text-align: center;
+    padding: 20px;
+}
+
+#map {
+    width: 90%;
+    height: 500px;
+    margin: 20px auto;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+body.dark-mode #map {
+    border-color: #555;
+}
