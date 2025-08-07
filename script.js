@@ -12,7 +12,7 @@ const spots = [
     tag: "公園"
   },
   {
-    name: "横河川沿いの公園",
+    name: "秋葉神社",
     img: "img/yokokawazoi.JPG",
     Comment: "多くの桜が咲いており、桜の木の下で過ごせる",
     tag: "公園"
@@ -90,3 +90,4 @@ document.getElementById("dark").addEventListener("click", () => {
 window.addEventListener('load', () => {
   loading.classList.add('loaded')
 });
+
